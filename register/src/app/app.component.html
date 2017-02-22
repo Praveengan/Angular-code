@@ -1,0 +1,23 @@
+<h1>
+    {{title}}
+</h1>
+
+<form id="main">
+    <div id="body">
+        <h1>Login :-</h1>
+        <label>Email{{email}} </label><br />
+        <input type="email" name="email" id="email" [(ngModel)]="email" /><br /><br />
+        <label>Password </label><br />
+        <input type="password" name="pass" /><br /><br />
+        <input type="button" (click)="register()" name="submit" value="Sign In" /><br /><br />
+        <div id="nameError">First name cannot be empty</div>
+    </div>
+</form>
+<a routerLink="/register">register</a>
+<router-outlet></router-outlet>
+<style rel="stylesheet">
+    #nameError {
+        color: red;
+        display: none;
+    }
+</style>

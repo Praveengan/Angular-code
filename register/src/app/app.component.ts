@@ -1,18 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'login',
-  templateUrl: './app.component.html',
+  selector: 'app-root',
+  template: '<register></register>',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="Training Angular 2"
-  email: string;
-  pass: string;
-    
-  register(){
-    console.log(this.email);
-
-  }
-  
+  title = 'app works!';
 }

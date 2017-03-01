@@ -2,18 +2,11 @@
     Welcome!!! to Library</h2>
 
 <ul class="collapsible" id="main" data-collapsible="accordion">
-    <!--<li *ngFor="let book of books">
+    <li *ngFor="let book of books">
         <div class="collapsible-header "><i class="material-icons">library_books</i>{{book.name}}</div>
         <div class="collapsible-body"><span>Book Id:-{{book.id}}<br />Book Author:-{{book.author}}</span></div>
-    </li>-->
-    <li>
-        <div class="collapsible-header "><i class="material-icons">library_books</i>name</div>
-        <div class="collapsible-body"><span>Book Id:-<br />Book Author</span></div>
     </li>
-    <li>
-        <div class="collapsible-header "><i class="material-icons">library_books</i>name</div>
-        <div class="collapsible-body"><span>Book Id:-<br />Book Author</span></div>
-    </li>
+
 </ul>
 <a routerLink="/add-book" class="waves-effect waves-light btn">Add book</a>
 <style rel="stylesheet">

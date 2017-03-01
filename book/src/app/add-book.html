@@ -1,0 +1,27 @@
+<h1>Enter the details of the book</h1>
+<div id="main">
+    <div class="input-field col s6">
+        <i class="material-icons prefix">input</i>
+        <input id="icon_prefix" type="number" class="validate" #id>
+        <label for="icon_prefix">Enter Book Id</label>
+    </div>
+    <div class="input-field col s6">
+        <i class="material-icons prefix">label</i>
+        <input id="icon_prefix" type="text" class="validate" #name>
+        <label for="icon_prefix">Enter Book Title</label>
+    </div>
+    <div class="input-field col s6">
+        <i class="material-icons prefix">perm_identity</i>
+        <input id="icon_prefix" type="text" class="validate" #author>
+        <label for="icon_prefix">Enter Book Author</label>
+    </div>
+    <a routerLink="" class="waves-effect waves-light btn" (click)="addbook(id.value,name.value,author.value)">Add Book</a>
+    <a routerLink="" class="waves-effect waves-light btn">Cancel</a>
+
+</div>
+
+<style rel="stylesheet">
+    #main {
+        margin-top: 8em;
+    }
+</style>
